@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:layout_width="180dp"
+
+    android:layout_marginTop="10dp"
+    android:layout_height="200dp">
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="6dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:id="@+id/foto_bisnis"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/bg_item"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"/>
+            <TextView
+                android:id="@+id/nama_bisnis"
+                android:layout_below="@+id/foto_bisnis"
+                android:text="Nama bisnis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/image_rat"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/image_rat"
+                android:text="4.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="1dp"
+                android:id="@+id/tv_countreview"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/tv_rating"
+                android:text="|600"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_jarak"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="200 Meter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
